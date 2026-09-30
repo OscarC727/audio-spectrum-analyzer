@@ -14,7 +14,7 @@ A real-time audio visualizer. A microphone feeds a Teensy 4.0, which runs an FFT
 4. The frequency bins get grouped into bands and scaled.
 5. The bands are drawn as bars on an **ILI9341 TFT** over SPI.
 
-I debugged the whole chain from the mic to the screen, which mostly meant figuring out where things went wrong in each step: bad samples, empty bins, or a display that wasn't redrawing fast enough.
+I debugged the whole chain from the mic to the screen, which mostly meant figuring out where things went wrong in each step. Bad samples, empty bins, or a display that wasn't redrawing fast enough.
 
 ## Hardware
 
@@ -26,7 +26,7 @@ I debugged the whole chain from the mic to the screen, which mostly meant figuri
 
 ## What's next
 
-A bigger physical version is planned, with three displays, potentiometers, buttons, a servo metronome, and a speaker. One ESP32 doesn't have enough pins for all of that, so the plan is three boards talking over ESP-NOW: one ESP32 as the controller and two Waveshare ESP32-S3 5-inch display boards.
+A bigger physical version is planned, with a bigger display, potentiometers, buttons, a servo metronome (possibly), and a speaker. One esp32 doesn't have enough pins for all of that, so the plan is three boards talking over ESP-NOW: one ESP32 as the controller and two Waveshare ESP32-S3 5-inch display boards.
 
 - [ ] Upload the Teensy code
 - [ ] Add photos and a demo video
